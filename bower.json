@@ -1,0 +1,31 @@
+{
+  "name": "commits-element",
+  "version": "0.1.0",
+  "homepage": "https://github.com/charbelrami/commits-element",
+  "authors": [
+    "Charbel Rami"
+  ],
+  "description": "GitHub commits element. Lists commits on a repository using Polymer and GitHub API.",
+  "main": "commits-element.html",
+  "keywords": [
+    "commit",
+    "commits",
+    "list",
+    "github",
+    "polymer",
+    "web-component",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-ajax": "PolymerElements/iron-ajax#~1.0.4",
+    "iron-list": "PolymerElements/iron-list#~1.1.0"
+  }
+}

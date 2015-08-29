@@ -1,0 +1,61 @@
+<!--
+@license
+Copyright (c) 2015 Charbel Rami. All rights reserved.
+MIT
+-->
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+<link rel="import" href="../iron-list/iron-list.html">
+<dom-module id="commits-element">
+  <template>
+    <style>
+      :host {
+        font-family: segoe ui, helvetica neue, helvetica, arial, sans-serif;
+      }
+      .commit {
+        background-color: #32393d;
+        padding: 10px;
+      }
+      .message {
+        color: #85a4b1;
+        text-decoration: none;
+        padding: 0 5px;
+      }
+      .author {
+        color: #0ea19c;
+        font-size: .875em;
+        text-decoration: none;
+      }
+    </style>
+    <iron-ajax url="{{path}}" handle-as="json" last-response="{{data}}" auto></iron-ajax>
+    <iron-list items="[[data]]" as="item">
+      <template>
+        <div class="commit">
+          <a class="message" href="[[item.html_url]]">[[item.commit.message]]</a> <a class="author" href="[[item.author.html_url]]">[[item.author.login]]</a>
+        </div>
+      </template>
+    </iron-list>
+  </template>
+  <script>
+    Polymer({
+      is: 'commits-element',
+      properties: {
+        /** repo owner */
+        owner: {
+          type: String
+        },
+        /** repo name */
+        repo: {
+          type: String
+        },
+        path: {
+          type: String,
+          computed: 'computePath(owner, repo)'
+        }
+      },
+      computePath: function (owner, repo) {
+        return 'https://api.github.com/repos/' + owner + '/' + repo + '/commits'
+      }
+    });
+  </script>
+</dom-module>

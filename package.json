@@ -1,0 +1,25 @@
+{
+  "name": "commits-element",
+  "version": "0.1.0",
+  "description": "GitHub commits element. Lists commits on a repository using Polymer and GitHub API.",
+  "main": "commits-element.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charbelrami/commits-element.git"
+  },
+  "keywords": [
+    "commit",
+    "commits",
+    "list",
+    "github",
+    "polymer",
+    "web-component",
+    "web-components"
+  ],
+  "author": "Charbel Rami",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charbelrami/commits-element/issues"
+  },
+  "homepage": "https://github.com/charbelrami/commits-element#readme"
+}
