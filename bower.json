@@ -1,6 +1,5 @@
 {
   "name": "commits-element",
-  "version": "0.1.0",
   "homepage": "https://github.com/charbelrami/commits-element",
   "authors": [
     "Charbel Rami"
@@ -25,7 +24,6 @@
     "tests"
   ],
   "dependencies": {
-    "iron-ajax": "PolymerElements/iron-ajax#~1.0.4",
-    "iron-list": "PolymerElements/iron-list#~1.1.0"
+    "iron-ajax": "PolymerElements/iron-ajax#~1.1.1"
   }
 }
