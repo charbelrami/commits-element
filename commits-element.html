@@ -10,7 +10,7 @@ MIT
 
     <template is="dom-repeat" items="{{data}}">
       <div class="commits-element-commit">
-        <a class="commits-element-message" href="[[item.html_url]]">[[item.commit.message]]</a> &middot; <a class="commits-element-author" href="[[item.author.html_url]]">[[item.author.login]]</a>
+        <a class="commits-element-message" href="[[item.html_url]]">[[item.commit.message]]</a> (<a class="commits-element-author" href="[[item.author.html_url]]">[[item.author.login]]</a>)
       </div>
     </template>
   </template>
