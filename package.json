@@ -1,6 +1,6 @@
 {
   "name": "commits-element",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "GitHub commits element. Lists commits on a repository using Polymer and GitHub API.",
   "main": "commits-element.html",
   "scripts": {
