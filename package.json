@@ -3,6 +3,10 @@
   "version": "0.2.1",
   "description": "GitHub commits element. Lists commits on a repository using Polymer and GitHub API.",
   "main": "commits-element.html",
+  "scripts": {
+    "version": "git add -A .",
+    "postversion": "git push --follow-tags && npm publish"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/charbelrami/commits-element.git"
@@ -21,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/charbelrami/commits-element/issues"
   },
-  "homepage": "https://github.com/charbelrami/commits-element#readme"
+  "homepage": "https://github.com/charbelrami/commits-element#readme",
+  "devDependencies": {
+    "polyserve": "^0.9.0"
+  }
 }

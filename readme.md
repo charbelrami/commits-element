@@ -4,9 +4,10 @@
 
 - [Introduction](#introduction)
 - [Installation](#installation)
-  - [Bower](#bower)
-  - [npm](#npm)
 - [Usage](#usage)
+- [Development](#development)
+  - [Run local server](#run-local-server)
+  - [Bump version](#bump-version)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -16,16 +17,8 @@ List commits on a repository using Polymer and GitHub API.
 
 ## Installation
 
-### Bower
-
-```
+```sh
 $ bower install commits-element
-```
-
-### npm
-
-```
-$ npm install commits-element
 ```
 
 ## Usage
@@ -44,6 +37,34 @@ $ npm install commits-element
   </body>
 </html>
 ```
+
+## Development
+
+- Clone the repository
+- `cd` into directory and install local dependencies
+
+```sh
+$ cd polymerizr && npm i && bower i
+```
+
+### Run local server
+
+```sh
+$ polyserve
+```
+
+### Bump version
+
+```sh
+$ npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
+```
+
+- Ensures the working tree is clean
+- Bumps the version in package.json
+- Updates the git index to match the working tree
+- Creates a git tag
+- Pushes all the refs, including annotated tags
+- Publishes the package to the npm registry
 
 ## Contributing
 
