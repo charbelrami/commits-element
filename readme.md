@@ -29,7 +29,7 @@ $ bower install commits-element
 <!doctype html>
 <html>
   <head>
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js" async></script>
     <link rel="import" href="bower_components/commits-element/commits-element.html">
   </head>
   <body>
@@ -44,7 +44,7 @@ $ bower install commits-element
 - `cd` into directory and install local dependencies
 
 ```sh
-$ cd polymerizr && npm i && bower i
+$ cd commits-element && npm i && bower i
 ```
 
 ### Run local server
@@ -52,6 +52,8 @@ $ cd polymerizr && npm i && bower i
 ```sh
 $ polyserve
 ```
+
+- Navigate to http://localhost:8080/components/commits-element/
 
 ### Bump version
 
@@ -72,6 +74,6 @@ $ npm version [<newversion> | major | minor | patch | premajor | preminor | prep
 
 ## License
 
-© 2015 Charbel Rami
+© 2015-2016 Charbel Rami
 
 [MIT](license.txt)
