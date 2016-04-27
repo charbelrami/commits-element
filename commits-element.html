@@ -3,7 +3,7 @@
 Copyright (c) 2015 Charbel Rami. All rights reserved.
 MIT
 -->
-<link rel="import" href="../iron-ajax/iron-ajax.html">
+<link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
 <dom-module id="commits-element">
   <template>
     <iron-ajax url="https://api.github.com/repos/{{owner}}/{{repo}}/commits" handle-as="json" last-response="{{data}}" auto></iron-ajax>
